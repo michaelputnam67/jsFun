@@ -7,29 +7,37 @@ const scope = {
     function changePerson() {
       if (personA === 'Paul') {
         person = 'CardiB';
-        beautifyPerson();
+        beautifyPerson(person);
       }
 
-      function beautifyPerson() {
-        // Log A: personB
+      function beautifyPerson(person) {
+        logA = personB
+        console.log(personB)
+        
         
         if (personB.includes('B')) {
           personB = person;
           personC = personB;
-          // Log B: personC
+          logB = personC
         }
       }
 
       personC = personA;
 
-      // Log C: personB
+      logC = personB
     }
 
     changePerson();
 
-    // Log D: personC
+    logD = personC
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
+    const result = [
+    {'A': logA},
+    {'B': logB},
+    {'C': logC},
+    {'D': logD}
+    ];
+   
     return result;
 
     // Annotation:
@@ -539,6 +547,7 @@ const scope = {
     };
 
     myCrazyKidAntics(myKid);
+
 
     const result = 'REPLACE WITH YOUR RESULT HERE';
     return result;
