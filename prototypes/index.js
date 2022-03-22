@@ -1,12 +1,10 @@
 const { kitties } = require('./datasets/kitties');
 const { puppers } = require('./datasets/puppers');
-const { clubs } = require('./datasets/clubs');
 const { mods } = require('./datasets/mods');
 const { cakes } = require('./datasets/cakes');
 const { classrooms } = require('./datasets/classrooms');
 const { breweries } = require('./datasets/breweries');
 const { nationalParks } = require('./datasets/nationalParks');
-const { books } = require('./datasets/books');
 const { weather } = require('./datasets/weather');
 const { instructors, cohorts } = require('./datasets/turing');
 const { bosses, sidekicks } = require('./datasets/bosses');
@@ -15,21 +13,16 @@ const { weapons, characters } = require('./datasets/ultima');
 const { dinosaurs, humans, movies } = require('./datasets/dinosaurs');
 
 
-
-
-
-
 // SINGLE DATASETS
 // =================================================================
 
 // DATASET: kitties from ./datasets/kitties
 const kittyPrompts = {
   orangePetNames() {
-
     // Return an array of just the names of kitties who are orange e.g.
-    // ['Tiger', 'Snickers']
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+        // ['Tiger', 'Snickers']
+
+        /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -38,8 +31,7 @@ const kittyPrompts = {
   sortByAge() {
     // Sort the kitties by their age
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -59,14 +51,13 @@ const kittyPrompts = {
     // },
     // ...etc]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
   }
 };
 
 // PLEASE READ-----------------------
 // Currently, your functions are probably using the `kitties` global import variable.
-// refactor the above functions using arguments and parameters so that 
+// refactor the above functions using arguments and parameters so that
 // they can perform the same utility
 // for the kitties or puppers datasets, depending on what arguments you send through.
 
@@ -85,6 +76,7 @@ const kittyPrompts = {
 // DATASET: clubs from ./datasets/clubs
 const clubPrompts = {
   membersBelongingToClubs() {
+    // Your function should access the clubs data through a parameter (it is being passed as an argument in the test file)
     // Create an object whose keys are the names of people, and whose values are
     // arrays that include the names of the clubs that person is a part of. e.g.
     // {
@@ -93,8 +85,7 @@ const clubPrompts = {
     //   ...etc
     // }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -129,8 +120,7 @@ const modPrompts = {
     //   { mod: 4, studentsPerInstructor: 8 }
     // ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -164,8 +154,7 @@ const cakePrompts = {
     //    ..etc
     // ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -192,8 +181,7 @@ const cakePrompts = {
     // ..etc
     // ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -203,8 +191,7 @@ const cakePrompts = {
     // Return the total amount of cakes in stock e.g.
     // 59
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -215,8 +202,7 @@ const cakePrompts = {
     // every cake in the dataset e.g.
     // ['dutch process cocoa', 'toasted sugar', 'smoked sea salt', 'berries', ..etc]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -233,8 +219,7 @@ const cakePrompts = {
     //    ...etc
     // }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -268,8 +253,7 @@ const classPrompts = {
     //   { roomLetter: 'G', program: 'FE', capacity: 29 }
     // ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -283,8 +267,7 @@ const classPrompts = {
     //   beCapacity: 96
     // }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -293,8 +276,7 @@ const classPrompts = {
   sortByCapacity() {
     // Return the array of classrooms sorted by their capacity (least capacity to greatest)
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -311,6 +293,7 @@ const classPrompts = {
 
 const bookPrompts = {
   removeViolence() {
+    // Your function should access the books data through a parameter (it is being passed as an argument in the test file)
     // return an array of all book titles that are not horror or true crime. Eg:
 
     //  ['1984', 'The Great Gatsby', 'Lord of the Flies', 'Harry Potter and the Sorcerer\'s Stone',
@@ -320,8 +303,7 @@ const bookPrompts = {
     //   'Catch-22', 'Treasure Island']
 
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -335,8 +317,7 @@ const bookPrompts = {
     //  { title: 'Life of Pi', year: 2001 },
     //  { title: 'The Curious Incident of the Dog in the Night-Time', year: 2003 }]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -358,8 +339,7 @@ const weatherPrompts = {
     // return an array of all the average temperatures. Eg:
     // [ 40, 40, 44.5, 43.5, 57, 35, 65.5, 62, 14, 46.5 ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -372,8 +352,7 @@ const weatherPrompts = {
     // 'New Orleans, Louisiana is sunny.',
     // 'Raleigh, North Carolina is mostly sunny.' ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -388,8 +367,7 @@ const weatherPrompts = {
     //   temperature: { high: 49, low: 38 }
     // }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -415,8 +393,7 @@ const nationalParksPrompts = {
     //   parksVisited: ["Rocky Mountain", "Acadia", "Zion"]
     //}
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -432,8 +409,7 @@ const nationalParksPrompts = {
     // { Florida: 'Everglades' } ]
 
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -455,8 +431,7 @@ const nationalParksPrompts = {
     //   'backpacking',
     //   'rock climbing' ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -482,8 +457,7 @@ const breweryPrompts = {
     // Return the total beer count of all beers for every brewery e.g.
     // 40
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -498,8 +472,7 @@ const breweryPrompts = {
     // ...etc.
     // ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -510,8 +483,7 @@ const breweryPrompts = {
     // e.g.
     // { name: 'Barrel Aged Nature\'s Sweater', type: 'Barley Wine', abv: 10.9, ibu: 40 }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -558,8 +530,7 @@ const turingPrompts = {
     //  { name: 'Robbie', studentCount: 18 }
     // ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -572,8 +543,7 @@ const turingPrompts = {
     // cohort1804: 10.5
     // }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -594,8 +564,7 @@ const turingPrompts = {
     //     Will: [1, 2, 3, 4]
     //   }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -611,8 +580,7 @@ const turingPrompts = {
     //   recursion: [ 'Pam', 'Leta' ]
     // }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -646,8 +614,7 @@ const bossPrompts = {
     //   { bossName: 'Scar', sidekickLoyalty: 16 }
     // ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -688,8 +655,7 @@ const astronomyPrompts = {
     //     color: 'red' }
     // ]
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -706,8 +672,7 @@ const astronomyPrompts = {
     //   red: [{obj}]
     // }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -729,8 +694,7 @@ const astronomyPrompts = {
     //    "The Little Dipper" ]
 
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -760,8 +724,7 @@ const ultimaPrompts = {
     // Return the sum of the amount of damage for all the weapons that our characters can use
     // Answer => 113
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -772,8 +735,7 @@ const ultimaPrompts = {
     // Return the sum damage and total range for each character as an object.
     // ex: [ { Avatar: { damage: 27, range: 24 }, { Iolo: {...}, ...}
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -809,8 +771,7 @@ const dinosaurPrompts = {
     //   'Jurassic World: Fallen Kingdom': 18
     // }
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -842,8 +803,7 @@ const dinosaurPrompts = {
       }
     */
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -875,8 +835,7 @@ const dinosaurPrompts = {
       }]
     */
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
@@ -898,8 +857,7 @@ const dinosaurPrompts = {
       { name: 'Bryce Dallas Howard', ages: [ 34, 37 ] } ]
     */
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
-    return result;
+    /* CODE GOES HERE */
 
     // Annotation:
     // Write your annotation here as a comment
